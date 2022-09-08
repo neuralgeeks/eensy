@@ -1,0 +1,31 @@
+{
+  "name": "eensy",
+  "version": "0.0.0",
+  "description": "Evolution, innovation, development efficiency 🛠. Comming soon ⌚️",
+  "scripts": {
+    "test": "echo \"Test are currently under development 🛠. Please stay tuned for updates ⌚️.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuralgeeks/eensy.git"
+  },
+  "keywords": [
+    "eensy",
+    "express",
+    "framework",
+    "web",
+    "microservices",
+    "rest",
+    "restful",
+    "app",
+    "api",
+    "cli"
+  ],
+  "author": "neuralgeeks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neuralgeeks/eensy/issues"
+  },
+  "homepage": "https://github.com/neuralgeeks/eensy#readme",
+  "dependencies": {}
+}
