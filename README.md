@@ -1,4 +1,4 @@
-<h1 align="center">Eensy</h1>
+<h1 align="center">Eensy library 🪶 </h1>
 <p>
   <a href="https://www.npmjs.com/package/eensy" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/eensy.framework.svg">
