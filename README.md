@@ -1,7 +1,7 @@
 <h1 align="center">Eensy library 🪶 </h1>
 <p>
   <a href="https://www.npmjs.com/package/eensy" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/eensy.framework.svg">
+    <img alt="Version" src="https://img.shields.io/npm/v/eensy.svg">
   </a>
   <a href="https://github.com/neuralgeeks/eensy/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />

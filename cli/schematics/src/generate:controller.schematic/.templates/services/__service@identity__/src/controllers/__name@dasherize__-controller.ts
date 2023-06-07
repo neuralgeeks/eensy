@@ -1,6 +1,6 @@
-import { ResourceNotFoundError } from 'eensy/dist/src/errors/common'
-import { Controller } from 'eensy/dist/src/patterns/controller'
-import { collection } from 'eensy/dist/src/patterns/transform'
+import { ResourceNotFoundError } from 'eensy/src/errors/common'
+import { Controller } from 'eensy/src/patterns/controller'
+import { collection } from 'eensy/src/patterns/transform'
 import { Request, Response } from 'express'
 
 import { <%= classify(name) %> } from '@prisma-generated/client'

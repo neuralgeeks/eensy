@@ -1,4 +1,4 @@
-import { routingFactory } from 'eensy/dist/src/routing'
+import { routingFactory } from 'eensy/src/routing'
 import { Router } from 'express'
 
 import controllerFactory from '@controllers/<%= dasherize(name) %>-controller'

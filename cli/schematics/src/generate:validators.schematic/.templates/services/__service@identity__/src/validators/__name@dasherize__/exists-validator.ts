@@ -1,4 +1,4 @@
-import { ResourceNotFoundError } from 'eensy/dist/src/errors/common'
+import { ResourceNotFoundError } from 'eensy/src/errors/common'
 import type { Request } from 'express'
 
 import <%= classify(name) %>Repository from '@repositories/<%= dasherize(name) %>-repository'

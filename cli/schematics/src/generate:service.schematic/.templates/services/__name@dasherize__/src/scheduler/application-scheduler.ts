@@ -1,4 +1,4 @@
-import Scheduler from 'eensy/dist/src/schedules/scheduler'
+import Scheduler from 'eensy/src/schedules/scheduler'
 
 import EnvSchedule from './schedules/env-schedule'
 

@@ -1,5 +1,5 @@
-import { BadRequestError } from 'eensy/dist/src/errors/common'
-import { rethrow } from 'eensy/dist/src/errors/error'
+import { BadRequestError } from 'eensy/src/errors/common'
+import { rethrow } from 'eensy/src/errors/error'
 import type { Request } from 'express'
 import { z } from 'zod'
 

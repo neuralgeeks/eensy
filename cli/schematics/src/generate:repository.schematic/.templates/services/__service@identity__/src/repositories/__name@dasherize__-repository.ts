@@ -1,4 +1,4 @@
-import PrismaRepository from 'eensy/dist/src/prisma/prisma-repository'
+import PrismaRepository from 'eensy/src/prisma/prisma-repository'
 
 import { <%= classify(name) %> } from '@prisma-generated/client'
 

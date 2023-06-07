@@ -1,4 +1,4 @@
-import { HTTPService } from 'eensy/dist/src/io/http-service'
+import { HTTPService } from 'eensy/src/io/http-service'
 
 export default class <%= classify(name) %>Service extends HTTPService {
   constructor() {

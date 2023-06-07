@@ -1,4 +1,4 @@
-import Logger from 'eensy/dist/src/utils/logger'
+import Logger from 'eensy/src/utils/logger'
 import { RedisClientType, createClient } from 'redis'
 
 import environment from '@env'

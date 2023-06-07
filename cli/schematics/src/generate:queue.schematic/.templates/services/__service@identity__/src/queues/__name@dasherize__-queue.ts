@@ -1,5 +1,5 @@
 import Bull from 'bull'
-import Logger from 'eensy/dist/src/utils/logger'
+import Logger from 'eensy/src/utils/logger'
 
 import environment from '@env'
 

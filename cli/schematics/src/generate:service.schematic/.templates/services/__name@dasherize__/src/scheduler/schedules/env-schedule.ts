@@ -1,5 +1,5 @@
-import Schedule from 'eensy/dist/src/schedules/schedule'
-import Logger from 'eensy/dist/src/utils/logger'
+import Schedule from 'eensy/src/schedules/schedule'
+import Logger from 'eensy/src/utils/logger'
 
 import { env } from '@env'
 

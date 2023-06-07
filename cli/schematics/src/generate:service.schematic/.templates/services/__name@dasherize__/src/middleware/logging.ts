@@ -1,4 +1,4 @@
-import Logger from 'eensy/dist/src/utils/logger'
+import Logger from 'eensy/src/utils/logger'
 import { NextFunction, Request, Response } from 'express'
 
 const logger = new Logger()

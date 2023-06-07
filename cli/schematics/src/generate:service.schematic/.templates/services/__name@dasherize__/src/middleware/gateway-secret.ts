@@ -1,4 +1,4 @@
-import { ForbiddenError } from 'eensy/dist/src/errors/common'
+import { ForbiddenError } from 'eensy/src/errors/common'
 import { NextFunction, Request, Response } from 'express'
 
 import environment from '@env'
