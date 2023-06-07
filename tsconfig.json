@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "rootDir": "./",
-    "outDir": "dist",
     "baseUrl": "tsconfig",
     "lib": ["es2019", "dom"],
     "declaration": true,

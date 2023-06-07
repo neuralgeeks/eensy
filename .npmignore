@@ -1,3 +1,5 @@
+# Mac OSX Finder files.
+**/.DS_Store
 .DS_Store
 
 # Ignores TypeScript files, but keeps definitions.
@@ -5,3 +7,17 @@
 !*.d.ts
 **/.gen
 **/examples/**/*
+
+# Misc
+node_modules/
+.eslintrc.js
+**/.gitignore
+.prettierrc
+.npmignore
+
+
+# IDEs
+.vscode/*
+
+# Do not ignore templates
+!**/.templates/**

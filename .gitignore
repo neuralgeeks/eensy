@@ -107,3 +107,8 @@ dist
 /build
 /dist
 **/.gen
+
+# Outputs
+**/*.js
+**/*.js.map
+**/*.d.ts
