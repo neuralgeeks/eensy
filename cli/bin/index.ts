@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as colors from 'ansi-colors'
 import { Command } from 'commander'
 import { textSync } from 'figlet'
