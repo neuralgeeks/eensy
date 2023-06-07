@@ -141,3 +141,19 @@ To run the tests, run the following command:
 ```
 npm run test
 ```
+
+# Build
+
+To build the service, run the following command:
+
+```
+npm run build
+```
+
+This will generate a `dist` folder with the compiled code.
+
+To run the compiled code, run the following command:
+
+```
+node dist/start.js
+```
