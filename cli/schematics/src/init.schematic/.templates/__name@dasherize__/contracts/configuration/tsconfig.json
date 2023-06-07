@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "dist",
+    "baseUrl": "tsconfig",
+    "lib": ["es2019", "dom"],
+    "declaration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "types": ["node"],
+    "sourceMap": true,
+    "target": "es2019",
+    "strict": true
+  },
+  "include": ["src/**/*", "tests/**/*", "environment/**/*", "app.ts"],
+  "exclude": []
+}

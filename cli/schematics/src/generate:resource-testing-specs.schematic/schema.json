@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "eensy-cli.generate:resource-testing-specs",
+  "title": "Generate resource testing specs",
+  "type": "object",
+  "description": "Generates the base testing specs for a resource inside an eensy project",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the resource",
+      "x-prompt": "Enter the name of the resource"
+    },
+    "service": {
+      "type": "string",
+      "description": "The name of the service that will contain the resource testing specs",
+      "x-prompt": "Enter the name of the service that will contain the resource testing specs"
+    }
+  },
+  "required": ["name", "service"]
+}

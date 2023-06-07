@@ -1,0 +1,8 @@
+{
+  "serviceUrl": "http://localhost:3110/g/<%= dasherize(name) %>",
+  "serviceStartWindow": 10000,
+  "loginServiceUrl": "http://localhost:3110/g/auth-service",
+  "loginRoute": "/auth/login",
+  "email": "demo@email.com",
+  "password": "develop"
+}

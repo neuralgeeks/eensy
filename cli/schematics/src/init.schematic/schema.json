@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "eensy-cli.init",
+  "title": "init",
+  "type": "object",
+  "description": "Inits an eensy project",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the new projects",
+      "x-prompt": "How would you want to name the project?",
+      "default": "project",
+      "minLength": 1,
+      "pattern": "[A-Za-z0-9][^]*[A-Za-z0-9]"
+    },
+    "shouldGenerateService": {
+      "type": "boolean",
+      "description": "Wether or not the init command should create the base api service",
+      "x-prompt": "Would you like to create a base API service?",
+      "default": true
+    }
+  },
+  "required": ["name", "shouldGenerateService"]
+}

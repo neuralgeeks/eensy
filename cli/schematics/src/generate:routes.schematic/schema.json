@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "eensy-cli.generate:routes",
+  "title": "Generate routes",
+  "type": "object",
+  "description": "Generates a new routes inside an eensy project",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the routes",
+      "x-prompt": "Enter the name of the new routes"
+    },
+    "service": {
+      "type": "string",
+      "description": "The name of the service that will contain the routes",
+      "x-prompt": "Enter the name of the service that will contain the routes"
+    }
+  },
+  "required": ["name", "service"]
+}

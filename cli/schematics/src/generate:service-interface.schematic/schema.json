@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "eensy-cli.generate:service-interface",
+  "title": "Generate service interface",
+  "type": "object",
+  "description": "Generates a new service interface inside an eensy project",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the new service interface",
+      "x-prompt": "Enter the name of the new service interface",
+      "minLength": 1,
+      "pattern": "[A-Za-z0-9][^]*[A-Za-z0-9]"
+    }
+  },
+  "required": ["name"]
+}

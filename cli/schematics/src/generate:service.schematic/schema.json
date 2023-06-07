@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "eensy-cli.generate:service",
+  "title": "Generate service",
+  "type": "object",
+  "description": "Generates a new service inside an eensy project",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the service",
+      "x-prompt": "Enter the name of the new service",
+      "default": "API",
+      "minLength": 1,
+      "pattern": "[A-Za-z0-9][^]*[A-Za-z0-9]"
+    },
+    "port": {
+      "type": "integer",
+      "description": "The port of the new service",
+      "x-prompt": "Enter the port of the new service",
+      "default": 3110
+    },
+    "_scope": {
+      "type": "string",
+      "description": "An optional scope used for npm install task",
+      "visible": false
+    }
+  },
+  "required": ["name", "port"]
+}

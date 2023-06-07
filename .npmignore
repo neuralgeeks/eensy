@@ -1,1 +1,7 @@
 .DS_Store
+
+# Ignores TypeScript files, but keeps definitions.
+*.ts
+!*.d.ts
+**/.gen
+**/examples/**/*

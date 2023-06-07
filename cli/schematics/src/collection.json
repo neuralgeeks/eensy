@@ -1,0 +1,29 @@
+{
+  "schematics": {
+    "init": {
+      "description": "inits an eensy project",
+      "factory": "./init.schematic/index#init",
+      "schema": "./init.schematic/schema.json"
+    },
+    "generate-service": {
+      "description": "Generates a new service inside an eensy project",
+      "factory": "./generate:service.schematic/index#generateService",
+      "schema": "./generate:service.schematic/schema.json"
+    },
+    "generate-resource": {
+      "description": "Generates a new resource inside an eensy project",
+      "factory": "./generate:resource.schematic/index#generateResource",
+      "schema": "./generate:resource.schematic/schema.json"
+    },
+    "generate-service-interface": {
+      "description": "Generates a new service interface inside an eensy service",
+      "factory": "./generate:service-interface.schematic/index#generateServiceInterface",
+      "schema": "./generate:service-interface.schematic/schema.json"
+    },
+    "generate-queue": {
+      "description": "Generates a new queue inside an eensy service",
+      "factory": "./generate:queue.schematic/index#generateQueue",
+      "schema": "./generate:queue.schematic/schema.json"
+    }
+  }
+}

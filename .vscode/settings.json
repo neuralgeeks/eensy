@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "**/*.js": { "when": "$(basename).ts" },
+    "**/*.d.ts": { "when": "$(basename).ts" },
+    "**/*.js.map": true
+  },
+  "editor.formatOnSave": false,
+  "eslint.validate": ["typescript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "npm.exclude": ["**/.gen/**", "**/.templates/**"]
+}

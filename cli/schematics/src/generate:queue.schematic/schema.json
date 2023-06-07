@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "eensy-cli.generate:queue",
+  "title": "Generate queue",
+  "type": "object",
+  "description": "Generates a new queue inside an eensy project",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the new queue",
+      "x-prompt": "Enter the name of the new queue",
+      "minLength": 1,
+      "pattern": "[A-Za-z0-9][^]*[A-Za-z0-9]"
+    }
+  },
+  "required": ["name"]
+}

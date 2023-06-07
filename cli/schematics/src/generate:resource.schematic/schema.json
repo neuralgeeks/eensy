@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "eensy-cli.generate:resource",
+  "title": "Generate reseource",
+  "type": "object",
+  "description": "Generates a new resource inside an eensy project",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the resource",
+      "x-prompt": "Enter the name of the new resource",
+      "default": "entity",
+      "minLength": 1,
+      "pattern": "[A-Za-z0-9][^]*[A-Za-z0-9]"
+    }
+  },
+  "required": ["name"]
+}
