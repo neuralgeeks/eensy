@@ -5,7 +5,8 @@
   "scripts": {
     "build": "npx tsc",
     "cli-dev": "ts-node cli/dev.ts",
-    "cli": "ts-node cli/bin/index.ts"
+    "cli": "ts-node cli/bin/index.ts",
+    "test": "echo \"No test specified 🛠.\""
   },
   "bin": {
     "eensy.cli": "dist/cli/bin/index.js"
