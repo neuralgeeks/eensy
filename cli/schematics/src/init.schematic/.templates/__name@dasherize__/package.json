@@ -1,7 +1,8 @@
 {
   "name": "<%= dasherize(name) %>",
   "scripts": {
-    "start": "ts-node start"
+    "start": "ts-node start",
+    "build": "npm run build --workspaces --if-present"
   },
   "workspaces": [
     "services/*",

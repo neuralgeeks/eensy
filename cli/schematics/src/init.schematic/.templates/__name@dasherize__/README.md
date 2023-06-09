@@ -66,6 +66,14 @@ On the other hand, if you want to run **only the services** `foo` and `bar`, run
 npm run start -s foo bar
 ```
 
+## Building services
+
+You can build all services by running:
+
+```bash
+npm run build
+```
+
 ## The configuration contract
 
 The configuration contract is a workspace and is used to share configuration between services. Configuration properties are written in the [`properties`](./contracts/configuration/src/properties.ts) file.

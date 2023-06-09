@@ -5,7 +5,7 @@
   "main": "app.ts",
   "scripts": {
     "test": "NODE_ENV=test jest --runInBand --passWithNoTests",
-    "ts-build": "npx tsc && cp -R ./prisma/generated ./dist/prisma/generated && npx tsc-alias && cp .env ./dist/.env",
+    "build": "npx tsc && cp -R ./prisma/generated ./dist/prisma/generated && npx tsc-alias && cp .env ./dist/.env",
     "start": "ts-node start",
     "prisma-reset": "npx prisma migrate reset && ts-node prisma/seeders",
     "prisma-generate": "npx prisma generate"
