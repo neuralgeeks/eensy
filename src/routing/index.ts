@@ -12,5 +12,6 @@ export const routingFactory = <T extends Controller>(
   ...http(router, controllerFactory),
   group,
   subgroup,
-  gateway: gateway(router),
 })
+
+export const gatewayFactory = (router: Router) => gateway(router)

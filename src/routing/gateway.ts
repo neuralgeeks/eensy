@@ -8,7 +8,7 @@ import type { HTTPService } from '../io/http-service'
 
 export type Gateway = (
   router: Router
-) => (options: {
+) => (options?: {
   proxy: httpProxy
   routeOffset: number
 }) => (
