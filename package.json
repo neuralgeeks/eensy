@@ -1,6 +1,6 @@
 {
   "name": "eensy",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A ligthweight, opinionated, and easy to use typescript library for microservice backend applications based on express.",
   "scripts": {
     "build": "npx tsc",
