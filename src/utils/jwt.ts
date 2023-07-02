@@ -1,10 +1,10 @@
-import { Request, Response } from 'express'
+import { Request } from 'express'
 import * as jwt from 'jsonwebtoken'
 import * as uuid from 'uuid'
 
 import { JWTErrors, UnauthorizedError } from '../errors/common'
 
-const defaultIndexIsValid = (id: string | number) =>
+const defaultIndexIsValid = <ID extends string | number>(id: ID) =>
   typeof id === 'string' ? uuid.validate(id) : !isNaN(id)
 
 export namespace BearerJWT {
@@ -31,16 +31,11 @@ export namespace BearerJWT {
     }
   }
 
-  export const verifyUserToken = async (
+  export const verifyUserToken = async <ID extends string | number>(
     scheme: ReturnType<typeof decodeBearerScheme>,
-    secretSource: (id: string | number) => Promise<{ secret: string }>,
-    {
-      indexProp,
-      indexIsValid,
-    }: {
-      indexProp: string
-      indexIsValid: (id: string | number) => boolean
-    } = { indexProp: 'user', indexIsValid: defaultIndexIsValid }
+    secretSource: (id: ID) => Promise<{ secret: string } | null>,
+    indexProp = 'userId',
+    indexIsValid = defaultIndexIsValid<ID>
   ) => {
     const id = scheme.decoded[indexProp]
     if (!indexIsValid(id))
@@ -86,18 +81,11 @@ export namespace httpBearerJWT {
     }
   }
 
-  export const verifyUserToken = async (
-    req: Request,
-    res: Response,
+  export const verifyUserToken = async <ID extends string | number>(
     scheme: ReturnType<typeof decodeBearerScheme>,
-    secretSource: (id: string | number) => Promise<{ secret: string }>,
-    {
-      indexProp,
-      indexIsValid,
-    }: {
-      indexProp: string
-      indexIsValid: (id: string | number) => boolean
-    } = { indexProp: 'user', indexIsValid: defaultIndexIsValid }
+    secretSource: (id: ID) => Promise<{ secret: string } | null>,
+    indexProp = 'userId',
+    indexIsValid = defaultIndexIsValid<ID>
   ) => {
     const id = scheme.decoded[indexProp]
     if (!indexIsValid(id)) throw JWTErrors.BadJWTError(scheme.token)
